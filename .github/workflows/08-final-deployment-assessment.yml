@@ -15,8 +15,12 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install pytest
+        run: pip install pytest
+
       - name: Run tests
         run: pytest
+
 
   prepare-output:
     runs-on: ubuntu-latest
